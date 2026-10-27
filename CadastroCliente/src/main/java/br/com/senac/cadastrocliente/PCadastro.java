@@ -438,6 +438,57 @@ public class PCadastro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
+       String codigo = campoCodigo.getText();
+String nomeCompleto = campoNome.getText();
+String contato = campoContato.getText();
+boolean ativo = ckAtivo.isSelected();
+
+String cpf = campoCPF.getText();
+String dataNascimento = campoDN.getText();
+String identidade = campoIdentidade.getText();
+String cnpj = campoCNPJ.getText();
+String inscricaoEstadual = campoInscricao.getText();
+
+String end = campoEndereço.getText();
+String numero = campoNumero.getText();
+String complemento = campoComplemento.getText();
+String cep = campoCEP.getText();
+String bairro = campoBairro.getText();
+
+String cidadeValor = cbCidade.getSelectedItem() != null
+        ? cbCidade.getSelectedItem().toString() : "";
+
+String estado = cbAtividade.getSelectedItem() != null
+        ? cbAtividade.getSelectedItem().toString() : "";
+
+String sexo;
+
+if (buttonF.isSelected()) {
+    sexo = "Feminino";
+} else if (buttonM.isSelected()) {
+    sexo = "Masculino";
+} else {
+    sexo = "Prefiro não informar";
+}
+
+String telefone = campoFone.getText();
+String fax = campoFax.getText();
+String celular = campoCelular.getText();
+String email = campoEmail.getText();
+
+String preferencia = campoEMail.getText();
+String observacoes = jTextAreaOBS.getText();
+
+String usuario = jTextField1.getText();
+String senha = jTextField2.getText();
+String confirmarSenha = jTextField3.getText();
+
+boolean aceitaTermos = false;
+
+javax.swing.JOptionPane.showMessageDialog(
+    this,
+    "Objeto PessoaFisica criado com sucesso!"
+);
         // TODO add your handling code here:
     }//GEN-LAST:event_salvarActionPerformed
 
